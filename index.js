@@ -1,84 +1,45 @@
-function soma(a,b) { 
-    return a + b 
-}
-console.log(soma(10, 20))
+const pessoas = [
+  {
+    name: 'Lucas',
+    money: 1000,
+    isRich: true,
+  },
+  {
+    name: 'Thiago',
+    money: 1200,
+    isRich: true,
+  },
+  {
+    name: 'Cleiton',
+    money: 800,
+    isRich: false,
+  },
+  {
+    name: 'Alex',
+    money: 900,
+    isRich: false,
+  },
+];
 
-function divisao(a,b) {
-    return a / b
-}
-console.log(divisao(20, 2))
+// soma o valor recebido por parametro à pessoa indicada, se o money da pessoa chegar 1000,00 deverá mudar o status de rich dela e retornar a pessoa completa.
+const doPayment = (valorADepositar, name) => {};
 
-function multiplicacao(a,b) {
-    return a * b
-}
-console.log(multiplicacao(30,2))
+// Verifica quem é rico e retorna uma frase 'é rico!' para quem é rico, e 'é pobre!' para quem é pobre.
+const richVerify = (pessoa) => {};
 
-function subtracao(a,b) {
-    return a - b
-}
-console.log(subtracao(50,10))
+const podeEntrarNaBalada = () => {};
 
+const podeDirigir = () => {};
 
-function multiTarefas(num1,num2) {
-    if(num1 > 0 && num2 > 0){
-        return num1 + num2 
-    }else if(num1 < 0 && num2 < 0){
-        return num1 - num2
-    }else if(num1 === 0 && num2 ===0){
-        return num1 * num2
-    }else {
-        return num1 / num2
-    }
-}
-console.log(multiTarefas(3,1))
+const alunos = [
+  {
+    name: 'Thiago',
+    nota: '...',
+  },
+];
 
-let pessoas = ['ana','julia','joao','carlos','lara','bia']
-console.log(pessoas[0])
+// retorna 'aprovado!' caso a nota seja maior ou igual a 60, e retorna 'reprovado!' caso a nota seja menor que 60.
+const passouDeAno = (aluno) => {};
 
-/*selecionando a ana*/
-
-for (let i = 0; i<pessoas.length; i++){
-    if(pessoas.length < 6){
-        pessoas.push('insira mais nomes')
-    }
-console.log(pessoas)
-}
-
-let listaInformacoes = [
-    {
-        nome: 'ana',
-        idade: 23,
-        pais: 'Brasil'
-    },
-    {
-        nome: 'carlos',
-        idadae: 25,
-        pais: 'franca'
-    },
-    {
-        nome: 'Bia',
-        idadae: 30,
-        pais: 'italia'
-    },
-    {
-        nome: 'ana',
-        idade: 22,
-        pais: 'Brasil'
-    }
-]
-for(let i = 0; i <listaInformacoes.length; i++){
-    if(listaInformacoes[i].pais === 'Brasil'){
-        console.log('pessoa do seu pais encontrada')
-        if(listaInformacoes[i].idade === 22){
-            console.log('estamos mais proximo de encontrar ana !! ' + divisao (100,5) + ' pontos acumulados')
-            if(listaInformacoes[i].nome === 'ana'){
-                console.log('a ana foi encontrada !!!!!! ' + soma(50,50) + ' pontos bonus')  
-            }break;
-        }else{
-            console.log('continuamos tentando encontrar ana !! ' + subtracao(30,20) + ' pontos adicionados')
-        }
-    }else{
-        console.log('essa pessoa nao e do brasil')  
-    }
-}
-/*console.log(listaInformacoes[0].pais)*/
+// retorna o nome dos alunos que passaram de ano.
+const passaramDeAno = (alunos) => {};
